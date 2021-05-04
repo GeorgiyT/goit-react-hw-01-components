@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import noImage from "../../image/no-image.png";
+import styles from "./FriendListItem.module.css";
 
 const FriendListItem = ({ avatar = noImage, name, isOnline }) => {
   return (
-    <li>
-      <span>{isOnline}</span>
-      <img src={avatar} alt={name} width="100px" />
+    <li className={styles.listItem}>
+      <span className={isOnline ? styles.isOnline : styles.isOffline}></span>
+      <img src={avatar} alt={name} />
       <p>{name}</p>
     </li>
   );

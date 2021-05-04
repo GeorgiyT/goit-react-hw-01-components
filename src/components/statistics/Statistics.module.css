@@ -1,0 +1,16 @@
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.mainTitle {
+  color: darkgrey;
+  margin-bottom: 15px;
+}
+
+.mainList {
+  display: flex;
+}

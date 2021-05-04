@@ -1,0 +1,36 @@
+.listItem {
+  margin-bottom: 20px;
+  box-shadow: 0 3px 5px gray;
+  background-color: honeydew;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.listItem:last-child {
+  margin-bottom: unset;
+}
+
+.listItem span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.listItem img {
+  max-width: 100px;
+}
+
+.listItem p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.isOnline {
+  background-color: green;
+}
+
+.isOffline {
+  background-color: red;
+}

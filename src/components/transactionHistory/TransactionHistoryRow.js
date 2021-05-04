@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./TransactionHistoryRow.module.css";
 
-const TransactionHistoryRow = ({ type, amount, currency }) => {
+const TransactionHistoryRow = ({ type, amount, currency, index }) => {
   return (
-    <tr>
+    <tr className={styles.tableRow} style={index % 2 ? { backgroundColor: "lightgray" } : {}}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
